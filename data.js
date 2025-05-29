@@ -38,7 +38,15 @@ const pageData = {
       contact: "Contact Us"
     },
     heading: "About Our Company",
-    description: "We are a team of professionals dedicated to delivering top-notch solutions."
+    description: "We are a team of professionals dedicated to delivering top-notch solutions.",
+    vision: "To be the leading provider of dental tourism and advanced dental care, making world-class smiles accessible to everyone.",
+    background: "Founded in 2010, our clinic has served thousands of happy clients from around the globe, combining expertise with compassion.",
+    founder: {
+      name: "Dr. Priya Sharma",
+      info: "Dr. Priya Sharma is an award-winning dental surgeon with over 20 years of experience in cosmetic and restorative dentistry. Her vision and leadership have made our clinic a top destination for dental tourism.",
+      img: "images/founder.jpg",
+      alt: "Dr. Priya Sharma, Founder"
+    }
   },
   service: {
     title: "Our Services",
@@ -49,7 +57,32 @@ const pageData = {
       contact: "Contact Us"
     },
     heading: "Our Services",
-    description: "We offer a wide range of services to meet your needs. Contact us for more details."
+    description: "Explore our specialized offerings designed to help you succeed.",
+    services: [
+      {
+        title: "Event Management",
+        desc: "Professional event planning and execution for conferences, seminars, and corporate gatherings.",
+        img: "images/event-management.jpg",
+        alt: "Event Management Service"
+      },
+      {
+        title: "Dental Tourism",
+        desc: "World-class dental care for international clients, combining treatment with travel.",
+        img: "images/dental-tourism.jpg",
+        alt: "Dental Tourism Service"
+      },
+      {
+        title: "Business Consultant",
+        desc: "Expert business consulting to help you grow, optimize, and innovate.",
+        img: "images/business-consultant.jpg",
+        alt: "Business Consultant Service"
+      }
+    ],
+    testimonials: [
+      { name: "Amit Verma", text: "Their event management team made our annual conference a huge success!" },
+      { name: "Lisa Wong", text: "Dental tourism was seamless and affordable. Highly recommend!" },
+      { name: "Carlos Ruiz", text: "The business consulting services transformed our operations." }
+    ]
   },
   contact: {
     title: "Contact Us",
