@@ -3,12 +3,12 @@ function setFooter() {
   const footer = document.getElementById('footer');
   if (!footer) return;
   // Logo and description
-  const logoSection = `
-    <div class="footer-logo-section">
-      <img src="images/logo.png" alt="Logo" class="footer-logo" />
-      <p class="footer-desc">Empowering Smiles & Success. Your trusted partner for dental tourism, event management, and business consulting.</p>
+const logoSection = `
+    <div class="footer-logo-section" style="display: flex; align-items: center; margin-top: 15px;">
+        <img src="images/3225b760ba2cbf6a9422a330d6bb73d5.jpg" alt="Logo" class="footer-logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 16px;" />
+        <p class="footer-desc" style="margin: 0;">Empowering Smiles & Success. Your trusted partner for dental tourism, event management, and business consulting.</p>
     </div>
-  `;
+`;
   // Quick links
   const nav = pageData.home.nav;
   const quickLinks = `

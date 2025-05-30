@@ -20,8 +20,8 @@ function setNav(navData) {
 function setHomeContent(data) {
   // Banner
   const banner = document.getElementById('banner');
+  banner.style.backgroundImage = `url('${data.banner.img}')`;
   banner.innerHTML = `
-    <img src="${data.banner.img}" alt="${data.banner.alt}" />
     <div class="banner-text">
       <h2>${data.banner.text}</h2>
     </div>
@@ -38,15 +38,54 @@ function setHomeContent(data) {
   const services = document.getElementById('services-brief');
   services.innerHTML = `
     <h2>Our Services</h2>
-    <ul>
-      ${data.servicesBrief.map(s => `<li><strong>${s.title}:</strong> ${s.desc}</li>`).join('')}
-    </ul>
+    <div class="services-brief-cards">
+      ${data.servicesBrief.map((s, i) => `
+        <div class="services-brief-card">
+          <div class="services-brief-card-title">${s.title}</div>
+          <div class="services-brief-card-desc">${s.desc}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+  // Places to Visit
+  const places = document.getElementById('places-to-visit');
+  places.innerHTML = `
+    <h2>Places to Visit</h2>
+    <div class="places-cards">
+      ${data.placesToVisit.map(p => `
+        <div class="place-card">
+          <img src="${p.img}" alt="${p.title}" class="place-img" />
+          <div class="place-title">${p.title}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+  // How It Works
+  const how = document.getElementById('how-it-works');
+  how.innerHTML = `
+    <h2>How It Works</h2>
+    <div class="how-cards">
+      ${data.howItWorks.map(step => `
+        <div class="how-card">
+          <div class="how-step">${step.step}</div>
+          <div class="how-text">${step.text}</div>
+        </div>
+      `).join('')}
+    </div>
   `;
   // Testimonials
   const testimonials = document.getElementById('testimonials');
   testimonials.innerHTML = `
     <h2>Testimonials</h2>
-    ${data.testimonials.map(t => `<blockquote>"${t.text}"<br><cite>- ${t.name}</cite></blockquote>`).join('')}
+    <div class="testimonial-cards">
+      ${data.testimonials.map(t => `
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&#10077;</div>
+          <div class="testimonial-text">${t.text}</div>
+          <div class="testimonial-author">- ${t.name}</div>
+        </div>
+      `).join('')}
+    </div>
   `;
 }
 

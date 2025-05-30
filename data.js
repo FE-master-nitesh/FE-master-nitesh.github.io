@@ -7,17 +7,17 @@ const pageData = {
       service: "Service",
       contact: "Contact Us"
     },
-    heading: "Welcome to Our Company!",
+    heading: "Welcome to ESS!",
     description: "We provide the best services to our customers. Explore our website to know more.",
     banner: {
-      img: "images/banner.jpg",
+      img: "images/travel-banner.avif",
       alt: "Company Banner",
       text: "Your Smile, Our Passion"
     },
     gallery: [
-      { img: "images/gallery1.jpg", alt: "Gallery Image 1" },
-      { img: "images/gallery2.jpg", alt: "Gallery Image 2" },
-      { img: "images/gallery3.jpg", alt: "Gallery Image 3" }
+      { img: "images/dental-voyage-dental-tourism-india-01-scaled.webp", alt: "Gallery Image 1" },
+      { img: "images/smiless.jpg", alt: "Gallery Image 2" },
+      { img: "images/Untitled-design-72.webp", alt: "Gallery Image 3" }
     ],
     servicesBrief: [
       { title: "Dental Tourism", desc: "World-class dental care for international patients." },
@@ -27,6 +27,17 @@ const pageData = {
     testimonials: [
       { name: "John Doe", text: "Amazing experience! Highly recommended." },
       { name: "Jane Smith", text: "Professional staff and excellent service." }
+    ],
+    placesToVisit: [
+      { img: "images/taj.jpg", title: "Taj Mahal, Agra" },
+      { img: "images/kerala.jpg", title: "Kerala Backwaters" },
+      { img: "images/goa.jpg", title: "Goa Beaches" },
+      { img: "images/rajasthan.jpeg", title: "Jaipur Palaces" }
+    ],
+    howItWorks: [
+      { step: 1, text: "Select your destination and preferred dental treatment." },
+      { step: 2, text: "Book your appointment and plan your travel with our help." },
+      { step: 3, text: "Arrive, get treated, and enjoy your trip!" }
     ]
   },
   about: {
