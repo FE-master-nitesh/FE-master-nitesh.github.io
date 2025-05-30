@@ -204,13 +204,13 @@ form button:hover { background: #555; }
 }
 #banner {
   position: relative;
-  width: 100%;
+  width: 111%;
   min-height: 320px;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  margin: -32px -32px 0 -32px;
+  margin: -32px -32px 0 -33px;
   display: flex;
   align-items: center;
   justify-content: center;
