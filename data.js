@@ -105,12 +105,33 @@ const pageData = {
       service: "Service",
       contact: "Contact Us"
     },
-    heading: "Get in Touch",
-    description: "Feel free to reach out to us via the form below.",
-    addressCard: {
-      img: "images/clinic.jpg",
-      alt: "Clinic Image",
+    banner: {
+      color: "#042729",
+      img: "images/contact.webp",
+      textTitle: "Get in Touch",
+      textDesc: "We would love to hear from you. Whether you have a question about our services, need assistance, or just want to connect, our team is ready to help."
+    },
+    talkToUs: {
+      icon: "images/phone.webp",
+      title: "Talk to Us",
+      desc: "Call us for immediate assistance or to book an appointment.",
+      phone: "+1-234-567-8900"
+    },
+    mailUs: {
+      icon: "images/mail.avif",
+      title: "Mail Us",
+      desc: "Send us your queries and we’ll get back to you as soon as possible.",
+      email: "info@dentalclinic.com"
+    },
+    location: {
+      gmap: "images/gmap.webp",
       address: "123 Dental Street, Smile City, Country 456789"
+    },
+    office: {
+      img: "images/office.jpg",
+      title: "Dubai Office",
+      address: "Suite 210, Business Bay, Dubai, UAE",
+      phone: "+971-4-123-4567"
     },
     email: "info@dentalclinic.com",
     phone: "+1-234-567-8900",

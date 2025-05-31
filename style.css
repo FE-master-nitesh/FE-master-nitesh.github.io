@@ -426,6 +426,181 @@ form button:hover { background: #555; }
   color: #444;
   line-height: 1.7;
 }
+#contact-banner {
+    margin: -32px;
+}
+.contact-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #042729;
+  padding: 3em 2.5em 2.5em 2.5em;
+  margin-bottom: 0;
+  position: relative;
+  min-height: 260px;
+  overflow: visible;
+}
+.contact-banner-text {
+  flex: 0 0 70%;
+  color: #fff;
+  z-index: 2;
+}
+.contact-banner-text h2 {
+  font-size: 2.3em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+.contact-banner-text p {
+  font-size: 1.2em;
+  color: #e6e8fa;
+  margin: 0;
+  max-width: 500px;
+  line-height: 1.6;
+}
+.contact-banner-img {
+  flex: 0 0 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
+}
+.contact-banner-img img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(4,39,41,0.18);
+  object-fit: cover;
+}
+.contact-cards-row {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-top: -3em;
+  margin-bottom: 2.5em;
+  position: relative;
+  z-index: 3;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(83,94,201,0.13);
+  padding: 2.2em 2em 2em 2em;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0;
+}
+.contact-card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1em;
+}
+.contact-card-title {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #535ec9;
+  margin-bottom: 0.5em;
+}
+.contact-card-desc {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+.contact-card-info {
+  font-size: 1.1em;
+  color: #042729;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.contact-location-row {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2.5em;
+  align-items: stretch;
+}
+.contact-location-map {
+  flex: 0 0 60%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #e6e8f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-location-map img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.contact-location-address {
+  flex: 0 0 40%;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(83,94,201,0.08);
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-location-address h3 {
+  color: #535ec9;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.contact-location-address p {
+  font-size: 1.1em;
+  color: #444;
+}
+.contact-office-row {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2.5em;
+  align-items: stretch;
+}
+.contact-office-img {
+  flex: 0 0 50%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #e6e8f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-office-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.contact-office-info {
+  flex: 0 0 50%;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(83,94,201,0.08);
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-office-info h3 {
+  color: #535ec9;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.contact-office-info p {
+  font-size: 1.1em;
+  color: #444;
+}
 @media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
@@ -444,5 +619,29 @@ form button:hover { background: #555; }
   }
   .about-hero-card {
     padding: 1.5em 1em;
+  }
+  .contact-banner {
+    flex-direction: column;
+    padding: 2em 1em 1em 1em;
+    min-height: 180px;
+  }
+  .contact-banner-img {
+    margin-top: 0;
+    margin-bottom: 1em;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .contact-cards-row, .contact-location-row, .contact-office-row {
+    flex-direction: column;
+    gap: 1.2em;
+    margin-top: 0;
+  }
+  .contact-card, .contact-location-map, .contact-location-address, .contact-office-img, .contact-office-info {
+    min-width: 0;
+    max-width: 100%;
+    padding: 1.2em 1em;
+  }
+  .contact-location-map img, .contact-office-img img {
+    height: 140px;
   }
 }
