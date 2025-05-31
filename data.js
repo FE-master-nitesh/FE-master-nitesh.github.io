@@ -48,14 +48,16 @@ const pageData = {
       service: "Service",
       contact: "Contact Us"
     },
-    heading: "About Our Company",
-    description: "We are a team of professionals dedicated to delivering top-notch solutions.",
-    vision: "To be the leading provider of dental tourism and advanced dental care, making world-class smiles accessible to everyone.",
-    background: "Founded in 2010, our clinic has served thousands of happy clients from around the globe, combining expertise with compassion.",
+    heading: "About Emova Dental Tourism & Services",
+    description: "Emova is dedicated to transforming smiles and lives through world-class dental care, innovative tourism experiences, and expert consulting. Our mission is to make high-quality dental services accessible and enjoyable for everyone, whether you are local or visiting from abroad.",
+    vision: "To be the most trusted name in dental tourism, blending healthcare excellence with memorable travel experiences. We envision a world where everyone can access top-tier dental care while exploring new destinations and cultures.",
+    visionImg: "images/vision.jpg",
+    storyImg: "images/story.jpg",
+    background: "Founded in 2010, Emova has grown from a small dental clinic into a leading provider of dental tourism and business consulting. Our team has helped thousands of clients from over 30 countries, offering not just dental treatments but also end-to-end travel support, local experiences, and personalized care. We believe in building lasting relationships with our clients, ensuring their comfort, safety, and satisfaction at every step.",
     founder: {
       name: "Dr. Priya Sharma",
-      info: "Dr. Priya Sharma is an award-winning dental surgeon with over 20 years of experience in cosmetic and restorative dentistry. Her vision and leadership have made our clinic a top destination for dental tourism.",
-      img: "images/founder.jpg",
+      info: "Dr. Priya Sharma, the visionary behind Emova, is an award-winning dental surgeon with over 20 years of experience in cosmetic and restorative dentistry. Her passion for excellence and patient care has earned her international recognition. Dr. Sharma is committed to continuous learning and innovation, leading a team that shares her values of empathy, integrity, and professionalism. Under her leadership, Emova has become a top destination for dental tourism, known for its advanced technology, compassionate staff, and outstanding results.",
+      img: "images/doc.webp",
       alt: "Dr. Priya Sharma, Founder"
     }
   },

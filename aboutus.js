@@ -1,27 +1,33 @@
 // aboutus.js: Populates About Us page sections from data.js
 function setAboutContent(data) {
-  // Vision
-  const vision = document.getElementById('vision');
-  vision.innerHTML = `
-    <h2>Our Vision</h2>
-    <p>${data.vision}</p>
-  `;
-  // Background
-  const background = document.getElementById('background');
-  background.innerHTML = `
-    <h2>Background</h2>
-    <p>${data.background}</p>
-  `;
-  // Founder
-  const founder = document.getElementById('founder');
-  founder.innerHTML = `
-    <h2>Founder</h2>
-    <div class="founder-card">
+  // Hero Card
+  document.getElementById('heading').textContent = data.heading;
+  document.getElementById('description').textContent = data.description;
+
+  // 6 Cards: alternate text/image per row
+  const grid = document.getElementById('about-cards-grid');
+  grid.innerHTML = `
+    <div class="about-card-text">
+      <h2>Our Vision</h2>
+      <p>${data.vision}</p>
+    </div>
+    <div class="about-card-img full-img">
+      <img src="${data.visionImg}" alt="${data.founder.alt}" />
+    </div>
+    <div class="about-card-img full-img">
+      <img src="${data.storyImg}" alt="${data.founder.alt}" />
+    </div>
+    <div class="about-card-text">
+      <h2>Our Story</h2>
+      <p>${data.background}</p>
+    </div>
+    <div class="about-card-text">
+      <h2>Meet Our Founder</h2>
+      <p>${data.founder.info}</p>
+    </div>
+    <div class="about-card-img">
       <img src="${data.founder.img}" alt="${data.founder.alt}" class="founder-img" />
-      <div class="founder-info">
-        <h3>${data.founder.name}</h3>
-        <p>${data.founder.info}</p>
-      </div>
+      <div class="founder-name">${data.founder.name}</div>
     </div>
   `;
 }
