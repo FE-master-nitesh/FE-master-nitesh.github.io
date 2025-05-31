@@ -39,12 +39,15 @@ nav a:hover { text-decoration: underline; }
 body {
     background: linear-gradient(to bottom, #decdfa, #ede8f5);
 }
-main { max-width: 600px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+main { background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 .banner-text h2 {
     color: #fff;
 }
 #testimonials h2, #services-brief h2, #gallery h2, #places-to-visit h2, #how-it-works h2, #heading {
   color: #3d52a0;
+}
+#places-to-visit h2, #how-it-works h2 {
+  text-align: center;
 }
 h1 { color: #333; }
 form label { display: block; margin-top: 1em; }

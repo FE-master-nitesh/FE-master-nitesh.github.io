@@ -7,10 +7,10 @@ const pageData = {
       service: "Service",
       contact: "Contact Us"
     },
-    heading: "Welcome to ESS!",
+    heading: "Welcome to Emova!",
     description: "We provide the best services to our customers. Explore our website to know more.",
     banner: {
-      img: "images/travel-banner.avif",
+      img: "images/banner.webp",
       alt: "Company Banner",
       text: "Your Smile, Our Passion"
     },
