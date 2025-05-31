@@ -50,7 +50,7 @@ function setHomeContent(data) {
   // Places to Visit
   const places = document.getElementById('places-to-visit');
   places.innerHTML = `
-    <h2>Places to Visit</h2>
+    <h2>Popular Places to Visit in India</h2>
     <div class="places-cards">
       ${data.placesToVisit.map(p => `
         <div class="place-card">
