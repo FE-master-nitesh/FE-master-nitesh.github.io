@@ -69,25 +69,31 @@ const pageData = {
       service: "Service",
       contact: "Contact Us"
     },
+    banner: {
+      img: "images/service-banner.jpg",
+      alt: "Service Banner",
+      title: "Our Services",
+      desc: "Explore our specialized offerings designed to help you succeed."
+    },
     heading: "Our Services",
     description: "Explore our specialized offerings designed to help you succeed.",
     services: [
       {
         title: "Event Management",
         desc: "Professional event planning and execution for conferences, seminars, and corporate gatherings.",
-        img: "images/event-management.jpg",
+        img: "images/event.jpg",
         alt: "Event Management Service"
       },
       {
         title: "Dental Tourism",
         desc: "World-class dental care for international clients, combining treatment with travel.",
-        img: "images/dental-tourism.jpg",
+        img: "images/dtour.webp",
         alt: "Dental Tourism Service"
       },
       {
         title: "Business Consultant",
         desc: "Expert business consulting to help you grow, optimize, and innovate.",
-        img: "images/business-consultant.jpg",
+        img: "images/bcon.png",
         alt: "Business Consultant Service"
       }
     ],
@@ -136,9 +142,9 @@ const pageData = {
     email: "info@dentalclinic.com",
     phone: "+1-234-567-8900",
     social: [
-      { name: "Facebook", url: "https://facebook.com/dentalclinic", icon: "images/facebook.png" },
-      { name: "Instagram", url: "https://instagram.com/dentalclinic", icon: "images/instagram.png" },
-      { name: "Twitter", url: "https://twitter.com/dentalclinic", icon: "images/twitter.png" }
+      { name: "Facebook", url: "https://facebook.com/dentalclinic", icon: "images/facebook.avif" },
+      { name: "Instagram", url: "https://instagram.com/dentalclinic", icon: "images/instagram.jpg" },
+      { name: "Twitter", url: "https://twitter.com/dentalclinic", icon: "images/twitter.jpg" }
     ],
     form: {
       name: "Your Name",
